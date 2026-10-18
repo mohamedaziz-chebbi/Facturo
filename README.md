@@ -157,15 +157,7 @@ No installation, build process, or package manager is required.
 - Tax rates and fiscal information must be verified by the user.
 - Facturo does not guarantee compliance with the invoicing regulations of any particular country.
 
-## Roadmap
 
-- [ ] JSON import and export
-- [ ] CSV export and date-range filtering
-- [ ] Client and product catalogs
-- [ ] Partial payment tracking
-- [ ] Automated tests
-- [ ] Arabic language and RTL support
-- [ ] Installable Progressive Web App (PWA)
 
 ## Developer
 
