@@ -1,0 +1,8 @@
+@media(max-width:1000px){.editor{grid-template-columns:1fr}.prev{position:static;max-height:none}}
+@media(max-width:760px){
+body{display:block}
+#side{position:fixed;z-index:5;transform:translateX(-100%);transition:.2s}#side.open{transform:none}
+#menu{display:inline-block;background:none;border:0;font-size:1.4rem}
+main{padding:1rem}
+.it{grid-template-columns:1fr 1fr}.it input:first-child{grid-column:1/-1}
+.dm{grid-template-columns:1fr}.dh{flex-direction:column}.dr{text-align:left}.tots{width:100%}}

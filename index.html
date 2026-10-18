@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Facturo</title><link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<aside id="side"><div class="brand"><img src="assets/logo.svg" alt="" width="32" height="32"><b>Facturo</b></div>
+<nav aria-label="Main"><button data-view="dashboard" data-i18n="nav_dash"></button><button data-view="list" data-i18n="nav_docs"></button><button data-new="invoice" data-i18n="nav_ninv"></button><button data-new="quote" data-i18n="nav_nquo"></button><button data-view="settings" data-i18n="nav_set"></button></nav>
+<small class="about">Facturo · Version 1.0<br><span data-i18n="dev"></span> Mohamed Aziz Chebbi</small></aside>
+<div id="wrap"><header><button id="menu" aria-label="Menu">☰</button><select id="lang" aria-label="Language"><option value="fr">Français</option><option value="en">English</option></select></header>
+<main>
+<section id="v-dashboard"><div id="stats" class="cards"></div><div class="row"><button class="btn" data-new="invoice" data-i18n="nav_ninv"></button><button class="btn alt" data-new="quote" data-i18n="nav_nquo"></button></div><h2 data-i18n="recent"></h2><div id="recent" class="scroll"></div></section>
+<section id="v-list" hidden><div class="row"><input id="q" type="search"><select id="fs"></select><select id="so"></select></div><div id="rows" class="scroll"></div></section>
+<section id="v-editor" hidden><div id="e" class="editor"><div class="panel"><div id="form"></div>
+<div class="row"><button class="btn" id="b-save" data-i18n="save"></button><button class="btn alt" id="b-print" data-i18n="print"></button><button class="btn alt quo-only" id="b-conv" data-i18n="convert"></button><button class="btn ghost" id="b-back" data-i18n="back"></button></div></div>
+<div class="panel prev"><div id="preview"></div></div></div></section>
+<section id="v-settings" hidden><div class="panel"><h2 data-i18n="set_title"></h2><div id="sform" class="fgrid"></div><p class="note" data-i18n="set_note"></p><button class="btn" id="s-save" data-i18n="save"></button></div></section>
+</main></div>
+<div id="toast" role="status" aria-live="polite"></div><div id="pz"></div>
+<script src="js/translations.js"></script><script src="js/storage.js"></script><script src="js/invoice.js"></script><script src="js/app.js"></script>
+</body></html>
